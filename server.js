@@ -14,7 +14,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "client/build")));
+// app.use(express.static("public"));
+// app.use(express.static(path.join(__dirname, "client", "build")))
 
 
 const uri = process.env.ATLAS_URI;
